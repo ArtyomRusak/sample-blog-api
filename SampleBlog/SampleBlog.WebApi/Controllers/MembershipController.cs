@@ -10,6 +10,7 @@ namespace SampleBlog.WebApi.Controllers
 {
   public class MembershipController : BaseController
   {
+    private const string SomethingWentWrong = "Something went wrong";
     private readonly IMembershipService _membershipService;
     private readonly IMapper<UserApiModel, User> _mapper;
 
@@ -20,6 +21,7 @@ namespace SampleBlog.WebApi.Controllers
     }
 
     [Route("signup")]
+    [HttpPost]
     public IHttpActionResult SignUp(UserApiModel user)
     {
       //validation: IValidatableObject, attribute validation
@@ -43,6 +45,7 @@ namespace SampleBlog.WebApi.Controllers
     }
 
     [Route("signin")]
+    [HttpPost]
     public IHttpActionResult SingIn(UserApiModel model)
     {
       if (this.ModelState.IsValid)
@@ -64,6 +67,7 @@ namespace SampleBlog.WebApi.Controllers
     }
 
     [Route("signout")]
+    [HttpPost]
     public IHttpActionResult SignOut(UserApiModel model)
     {
       if (this.ModelState.IsValid)
@@ -76,6 +80,28 @@ namespace SampleBlog.WebApi.Controllers
         catch (Exception e)
         {
           return this.BadRequest();
+        }
+      }
+      else
+      {
+        return this.BadRequest(this.ModelState);
+      }
+    }
+
+    [Route("user")]
+    [HttpGet]
+    public IHttpActionResult GetUser(int id)
+    {
+      if (this.ModelState.IsValid)
+      {
+        try
+        {
+          var user = _membershipService.GetUser(id);
+          return this.Ok(user);
+        }
+        catch (Exception e)
+        {
+          return this.BadRequest(MembershipController.SomethingWentWrong);
         }
       }
       else

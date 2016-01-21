@@ -173,12 +173,14 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MembershipController.cs" />
+    <Compile Include="Controllers\PostController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Exceptions\UserException.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Mappers\UserMapper.cs" />
+    <Compile Include="Models\SearchApiModel.cs" />
     <Compile Include="Models\UserApiModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

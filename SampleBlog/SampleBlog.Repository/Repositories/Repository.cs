@@ -9,7 +9,7 @@ namespace SampleBlog.Repository.Repositories
     where TModel : Entity, new()
     where TKeyType : struct
   {
-    public TModel CreateEntity(TModel model)
+    public virtual TModel CreateEntity(TModel model)
     {
       try
       {
@@ -24,7 +24,7 @@ namespace SampleBlog.Repository.Repositories
       return null;
     }
 
-    public void UpdateEntity(TModel model)
+    public virtual void UpdateEntity(TModel model)
     {
       try
       {
@@ -36,7 +36,7 @@ namespace SampleBlog.Repository.Repositories
       }
     }
 
-    public void DeleteEntity(TKeyType id)
+    public virtual void DeleteEntity(TKeyType id)
     {
       try
       {
@@ -48,7 +48,7 @@ namespace SampleBlog.Repository.Repositories
       }
     }
 
-    public TModel GetEntityById(TKeyType id)
+    public virtual TModel GetEntityById(TKeyType id)
     {
       try
       {
