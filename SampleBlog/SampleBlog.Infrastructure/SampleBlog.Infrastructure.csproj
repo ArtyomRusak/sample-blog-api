@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mapping\IMapper.cs" />
     <Compile Include="Security\IPasswordHasher.cs" />
     <Compile Include="Security\PasswordHasher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

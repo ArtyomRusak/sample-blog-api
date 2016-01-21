@@ -42,10 +42,20 @@
     <Compile Include="Contracts\IMembershipService.cs" />
     <Compile Include="Contracts\IService.cs" />
     <Compile Include="Exceptions\MembershipServiceException.cs" />
+    <Compile Include="Mappers\UserMapper.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SampleBlog.Infrastructure\SampleBlog.Infrastructure.csproj">
+      <Project>{b98f2d08-d91e-417d-9b86-be49b3fefd1b}</Project>
+      <Name>SampleBlog.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SampleBlog.RepositoryContracts\SampleBlog.RepositoryContracts.csproj">
+      <Project>{2d90ebeb-93ba-4523-9be2-7aa9c3f729e4}</Project>
+      <Name>SampleBlog.RepositoryContracts</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -2,8 +2,10 @@
 
 namespace SampleBlog.RepositoryContracts.Models
 {
-  public class UserDto : Entity<int>
+  public class UserDto : Entity
   {
+    public int Id { get; set; }
+
     public string Email { get; set; }
 
     public string Password { get; set; }

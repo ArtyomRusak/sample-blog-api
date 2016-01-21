@@ -3,7 +3,8 @@
 namespace SampleBlog.RepositoryContracts.Contracts
 {
   public interface IBaseRepository<TModel, TKeyType> : IRepository
-    where TModel : Entity<TKeyType> where TKeyType : struct
+    where TModel : Entity
+    where TKeyType : struct
   {
     TModel CreateEntity(TModel model);
 

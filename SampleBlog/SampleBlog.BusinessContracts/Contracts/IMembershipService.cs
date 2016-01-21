@@ -12,6 +12,8 @@ namespace SampleBlog.BusinessContracts.Contracts
 
     bool LoginUser(string email, string password);
 
+    bool LogoutUser(string email);
+
     User GetUser(int userId);
   }
 }

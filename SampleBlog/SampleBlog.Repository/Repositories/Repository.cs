@@ -6,7 +6,7 @@ using SampleBlog.RepositoryContracts.Models;
 namespace SampleBlog.Repository.Repositories
 {
   public abstract class Repository<TModel, TKeyType> : IBaseRepository<TModel, TKeyType>
-    where TModel : Entity<TKeyType>, new()
+    where TModel : Entity, new()
     where TKeyType : struct
   {
     public TModel CreateEntity(TModel model)
