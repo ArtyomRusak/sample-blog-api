@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SampleBlog.BusinessContracts.Models;
-using SampleBlog.Infrastructure.Mapping;
+﻿using SampleBlog.Infrastructure.Mapping;
 using SampleBlog.RepositoryContracts.Models;
+using SampleBlog.ServiceContracts.Models;
 
-namespace SampleBlog.BusinessContracts.Mappers
+namespace SampleBlog.ServiceContracts.Mappers
 {
   public class UserMapper : IMapper<User, UserDto>
   {

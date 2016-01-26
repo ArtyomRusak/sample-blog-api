@@ -7,8 +7,8 @@
     <ProjectGuid>{AA8E4794-ADEE-4A1D-A823-F8DDB6A94E80}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SampleBlog.BusinessContracts</RootNamespace>
-    <AssemblyName>SampleBlog.BusinessContracts</AssemblyName>
+    <RootNamespace>SampleBlog.ServiceContracts</RootNamespace>
+    <AssemblyName>SampleBlog.ServiceContracts</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

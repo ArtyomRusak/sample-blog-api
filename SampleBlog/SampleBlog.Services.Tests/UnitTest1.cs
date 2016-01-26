@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using SampleBlog.BusinessContracts.Contracts;
-using SampleBlog.BusinessContracts.Models;
+using SampleBlog.ServiceContracts.Contracts;
+using SampleBlog.ServiceContracts.Models;
 
 namespace SampleBlog.Services.Tests
 {

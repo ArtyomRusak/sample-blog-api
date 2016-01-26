@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleBlog.RepositoryContracts", "SampleBlog.RepositoryContracts\SampleBlog.RepositoryContracts.csproj", "{2D90EBEB-93BA-4523-9BE2-7AA9C3F729E4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleBlog.Repository", "SampleBlog.Repository\SampleBlog.Repository.csproj", "{8F915D60-3410-4248-BB27-3F6D00924422}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleBlog.BusinessContracts", "SampleBlog.BusinessContracts\SampleBlog.BusinessContracts.csproj", "{AA8E4794-ADEE-4A1D-A823-F8DDB6A94E80}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleBlog.ServiceContracts", "SampleBlog.ServiceContracts\SampleBlog.ServiceContracts.csproj", "{AA8E4794-ADEE-4A1D-A823-F8DDB6A94E80}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleBlog.Infrastructure", "SampleBlog.Infrastructure\SampleBlog.Infrastructure.csproj", "{B98F2D08-D91E-417D-9B86-BE49B3FEFD1B}"
 EndProject

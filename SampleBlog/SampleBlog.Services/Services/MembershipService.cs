@@ -1,10 +1,10 @@
 ﻿using System;
-using SampleBlog.BusinessContracts.Contracts;
-using SampleBlog.BusinessContracts.Mappers;
-using SampleBlog.BusinessContracts.Models;
 using SampleBlog.RepositoryContracts;
 using SampleBlog.RepositoryContracts.Exceptions;
 using SampleBlog.RepositoryContracts.Models;
+using SampleBlog.ServiceContracts.Contracts;
+using SampleBlog.ServiceContracts.Mappers;
+using SampleBlog.ServiceContracts.Models;
 
 namespace SampleBlog.Services.Services
 {

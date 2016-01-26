@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SampleBlog.BusinessContracts.Models
+namespace SampleBlog.ServiceContracts.Models
 {
   public class User
   {

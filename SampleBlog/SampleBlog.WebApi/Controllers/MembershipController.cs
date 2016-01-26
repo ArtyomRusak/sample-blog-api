@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Web.Http;
 using System.Web.Http.Results;
-using SampleBlog.BusinessContracts.Contracts;
-using SampleBlog.BusinessContracts.Models;
 using SampleBlog.Infrastructure.Mapping;
+using SampleBlog.ServiceContracts.Contracts;
+using SampleBlog.ServiceContracts.Models;
 using SampleBlog.WebApi.Models;
 
 namespace SampleBlog.WebApi.Controllers
@@ -70,22 +70,13 @@ namespace SampleBlog.WebApi.Controllers
     [HttpPost]
     public IHttpActionResult SignOut(UserApiModel model)
     {
-      if (this.ModelState.IsValid)
-      {
-        try
-        {
-          var logout = _membershipService.LogoutUser(model.Email);
-          return this.Ok(logout);
-        }
-        catch (Exception e)
-        {
-          return this.BadRequest();
-        }
-      }
-      else
+      if (!this.ModelState.IsValid)
       {
         return this.BadRequest(this.ModelState);
       }
+
+      var logout = _membershipService.LogoutUser(model.Email);
+      return this.Ok(logout);
     }
 
     [Route("user")]

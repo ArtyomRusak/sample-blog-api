@@ -6,6 +6,8 @@ namespace SampleBlog.Repository
 {
   public class RepositoryFactory : IRepositoryFactory
   {
+    
+
     public IMembershipRepository GetMembershipRepository()
     {
       return new MembershipRepository();

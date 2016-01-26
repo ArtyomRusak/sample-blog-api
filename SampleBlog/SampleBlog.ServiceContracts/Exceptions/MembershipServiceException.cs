@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SampleBlog.BusinessContracts.Exceptions
+namespace SampleBlog.ServiceContracts.Exceptions
 {
   public class MembershipServiceException : Exception
   {

@@ -1,6 +1,6 @@
-﻿using SampleBlog.BusinessContracts.Models;
+﻿using SampleBlog.ServiceContracts.Models;
 
-namespace SampleBlog.BusinessContracts.Contracts
+namespace SampleBlog.ServiceContracts.Contracts
 {
   public interface IMembershipService : IService
   {

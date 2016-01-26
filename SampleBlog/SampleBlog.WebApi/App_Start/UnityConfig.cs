@@ -1,10 +1,10 @@
 using Microsoft.Practices.Unity;
 using System.Web.Http;
-using SampleBlog.BusinessContracts.Contracts;
-using SampleBlog.BusinessContracts.Models;
 using SampleBlog.Infrastructure.Mapping;
 using SampleBlog.Repository;
 using SampleBlog.RepositoryContracts;
+using SampleBlog.ServiceContracts.Contracts;
+using SampleBlog.ServiceContracts.Models;
 using SampleBlog.Services.Services;
 using SampleBlog.WebApi.Mappers;
 using SampleBlog.WebApi.Models;

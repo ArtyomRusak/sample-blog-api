@@ -236,9 +236,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SampleBlog.BusinessContracts\SampleBlog.BusinessContracts.csproj">
+    <ProjectReference Include="..\SampleBlog.ServiceContracts\SampleBlog.ServiceContracts.csproj">
       <Project>{aa8e4794-adee-4a1d-a823-f8ddb6a94e80}</Project>
-      <Name>SampleBlog.BusinessContracts</Name>
+      <Name>SampleBlog.ServiceContracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\SampleBlog.Infrastructure\SampleBlog.Infrastructure.csproj">
       <Project>{b98f2d08-d91e-417d-9b86-be49b3fefd1b}</Project>

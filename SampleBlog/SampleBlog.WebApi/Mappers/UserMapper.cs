@@ -1,5 +1,5 @@
-﻿using SampleBlog.BusinessContracts.Models;
-using SampleBlog.Infrastructure.Mapping;
+﻿using SampleBlog.Infrastructure.Mapping;
+using SampleBlog.ServiceContracts.Models;
 using SampleBlog.WebApi.Models;
 
 namespace SampleBlog.WebApi.Mappers

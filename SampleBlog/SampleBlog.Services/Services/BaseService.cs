@@ -1,5 +1,5 @@
-﻿using SampleBlog.BusinessContracts.Contracts;
-using SampleBlog.RepositoryContracts;
+﻿using SampleBlog.RepositoryContracts;
+using SampleBlog.ServiceContracts.Contracts;
 
 namespace SampleBlog.Services.Services
 {
